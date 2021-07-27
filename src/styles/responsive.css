@@ -1,0 +1,181 @@
+@media screen and (max-width: 649px) {
+  hero-section {
+    background: url('/images/hero-image_2-small.jpg') center no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .resto__image_wrap {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@media screen and (min-width: 650px) {
+  button.hamburgerButton {
+    display: none;
+  }
+
+  .nav-list {
+    position: initial;
+    width: 40rem;
+    height: initial;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: initial;
+    opacity: 1;
+    transform: scale(1);
+    visibility: initial;
+    transition: unset;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    font-size: 1.4rem;
+    font-weight: normal;
+    transition: color 0.5s;
+  }
+
+  .nav-link:hover {
+    background: none;
+    color: var(--orange-solid);
+  }
+
+  /* Explore -- Grid items Styles */
+  resto-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  /* Detail Styles Starts*/
+   .detail__header {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 3rem 0 2rem 0;
+    gap: 3rem;
+  }
+
+  .detail__image {
+    grid-row: 1 / span 3;
+  }
+  .detail__title, 
+  .detail__rating {
+    font-size: 2rem;
+  }
+
+  .detail__title, 
+  .detail__city, 
+  .detail__address, 
+  .detail__category_item {
+    margin-bottom: 0.7rem;
+  }
+
+  .detail__city {
+    font-size: 1.5rem;
+  }
+
+  .detail__address, 
+  .detail__rating sup, 
+  .detail__category_item {
+    font-size: 1.25rem;
+  }
+
+  .detail__category_items {
+    margin-top: 1.8rem;
+  } 
+
+  /* Detail -- Body */
+
+   .detail__body_title {
+    font-size: 2.5rem;
+  }
+
+  .detail__menu {
+    grid-template-columns: 1fr 1fr;
+  } 
+
+  /* Detail -- Review */
+
+   .detail__reviews_item {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .detail__reviews_avatar {
+    width: 50%;
+  }
+
+  .detail__reviews_date {
+    font-size: 1.4rem;
+  } 
+  /* Detail Styles Ends*/
+}
+
+@media screen and (min-width: 900px) {
+  resto-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .detail__title {
+    font-size: 2.8rem;
+  } 
+  .detail__rating {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .detail__title,.detail__category_item {
+    margin-bottom: 1rem;
+  }
+  
+  .detail__city, 
+  .detail__address {
+    margin-bottom: initial;
+  }
+
+  .detail__city {
+    font-size: 1.8rem;
+  }
+
+  .detail__address, 
+  .detail__rating sup, 
+  .detail__category_item {
+    font-size: initial;
+  }
+
+  .detail__category_items {
+    margin-top: 3rem;
+  } 
+}
+
+
+
+
+/* Responsive Hero Divider Starts */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero__divider svg {
+    width: calc(106% + 1.3px);
+    height: 73px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__divider svg {
+    width: calc(188% + 1.3px);
+    height: 58px;
+  }
+}
+
+/* Responsive Hero Dividers Ends */
+
+@media screen and (min-width: 1600px) {
+  resto-list {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
